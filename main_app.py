@@ -15,6 +15,7 @@ Backend capabilities:
 
 from pathlib import Path
 
+import os
 import cv2
 import numpy as np
 import pandas as pd
@@ -217,6 +218,7 @@ if __name__ == "__main__":
     # Access the app via http://127.0.0.1:5000/ in your browser
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
 
 
 
